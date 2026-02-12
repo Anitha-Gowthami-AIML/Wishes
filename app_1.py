@@ -85,7 +85,7 @@ with col1:
     
     # Try to use a nice font, fall back to default if not available
     try:
-        text_font = ImageFont.truetype("arial.ttf", 16)
+        text_font = ImageFont.truetype("arial.ttf", 20)
     except:
         text_font = ImageFont.load_default()
     
@@ -132,3 +132,4 @@ for i in range(25):
          {emoji}
     </div>
     """, unsafe_allow_html=True)
+
