@@ -100,3 +100,4 @@ for i in range(25):
          {emoji}
     </div>
     """, unsafe_allow_html=True)
+
