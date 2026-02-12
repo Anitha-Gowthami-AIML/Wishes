@@ -83,20 +83,20 @@ with col2:
     audio_bytes = audio_file.read()
     st.audio(audio_bytes, format="audio/mp3")
 
-# ---------- Floating Hearts (Different Colors) ----------
+# ---------- Floating Hearts & Celebration Elements ----------
 import random
 
-heart_colors = ["❤️", "🧡", "💛", "💚", "💙", "💜", "🤍", "🤎"]
+party_emojis = ["❤️", "🎈", "🧡", "🎉","💛", "💜", "🤍",  "🎊", "🎀", "✨", "⭐", "🌟", "💫", "🎁", "🎗️", "🎪"]
 
-for i in range(20):
+for i in range(25):
     left = random.randint(0, 100)
     duration = random.randint(5, 10)
     delay = random.randint(0, 5)
-    heart_emoji = random.choice(heart_colors)
+    emoji = random.choice(party_emojis)
 
     st.markdown(f"""
     <div class="heart" 
          style="left:{left}%; animation-duration:{duration}s; animation-delay:{delay}s;">
-         {heart_emoji}
+         {emoji}
     </div>
     """, unsafe_allow_html=True)
