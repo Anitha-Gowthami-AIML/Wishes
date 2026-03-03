@@ -118,7 +118,7 @@ with col2:
 # ---------- Floating Hearts & Celebration Elements ----------
 import random
 
-party_emojis = ["❤️", "🎈", "🧡", "🎉","💛", "💜", "🤍",  "🎊", "🎀", "✨", "⭐", "🌟", "💫", "🎁", "🎗️", "🎪"]
+party_emojis = ["🎈", "🧡", "🎉","💛", "💜", "🤍",  "🎊", "🎀", "✨", "⭐", "🌟", "💫", "🎁", "🎗️", "🎪"]
 
 for i in range(25):
     left = random.randint(0, 100)
@@ -132,5 +132,6 @@ for i in range(25):
          {emoji}
     </div>
     """, unsafe_allow_html=True)
+
 
 
